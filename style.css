@@ -1,0 +1,356 @@
+@import url(https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+
+header.header {
+    padding: 44px 0px;
+    background: linear-gradient(172.98deg, #7DCE13 5.67%, #EAE209 88.87%);
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    font-family: Playfair Display;
+    padding-right: 10px;
+}
+
+nav li a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+
+
+.header__menu-singup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu-singup a {
+    padding-left: 18px;
+}
+
+.hero {
+    padding-top: 141px;
+}
+
+.hero__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__text h1 {
+    font-family: Caveat;
+    font-size: 64px;
+    padding-bottom: 17px;
+}
+
+.hero__text p {
+    font-family: Playfair Display;
+    font-size: 24px;
+    padding-bottom: 38px;
+}
+
+.hero__btn button {
+    display: flex;
+    align-items: center;
+    padding: 13px 30px;
+    border: 2px solid #EAE509;
+    border-radius: 21px;
+    background-color: transparent;
+    font-size: 24px;
+    font-family: Caveat;
+    cursor: pointer;
+
+    transition: .5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.hero__btn button:hover {
+    background-color: #EAE509;
+    color: #fff
+}
+
+.hero__btn a button {
+    transition: .5s cubic-bezier(0.23, 1, 0.320, 1);
+    text-decoration: none;
+    color: black
+}
+
+
+
+.hero__btn button svg {
+    padding-right: 5px;
+}
+
+.hero__btn button svg:hover {
+    color: white;
+}
+
+.about-us {
+    padding-top: 191px;
+}
+
+main {
+    padding-bottom: 145px;
+}
+
+.about-us__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-us__text {
+    text-align: right;
+}
+
+.about-us__text h1 {
+    font-family: Caveat;
+    font-size: 64px;
+    padding-bottom: 17px;
+}
+
+.about-us__text p {
+    font-family: Playfair Display;
+    font-size: 24px;
+    padding-bottom: 26px;
+}
+
+.about-us__text p:nth-last-child(1) {
+    padding-bottom: 0;
+}
+
+.legal {
+    padding-top: 200px;
+}
+
+.legal__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.legal__info h1 {
+    font-family: Caveat;
+    font-size: 64px;
+    padding-bottom: 29px;
+}
+
+.register {
+    padding-top: 72px;
+}
+
+.register h1 {
+    font-family: Caveat;
+    font-size: 64px;
+    padding-bottom: 40px;
+}
+
+.register p {
+    font-size: 24px;
+    font-family: Playfair Display;
+    padding-bottom: 72px;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 72px;
+}
+
+
+
+.register form input {
+    width: 670px;
+    margin-bottom: 40px;
+    font-family: Playfair Display;
+    font-size: 24px;
+    padding: 34px;
+    border: 3px solid #CFCFCF;
+    border-radius: 26px;
+}
+
+.inputnew {
+    padding-top: 40px;
+}
+
+.register form button {
+    width: 251px;
+    background-color: #7DCE13;
+    font-family: Caveat;
+    font-size: 20px;
+    padding: 27px 83px;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.register p {
+    font-size: 16px;
+}
+
+footer.footer {
+    padding: 10px;
+    background: linear-gradient(172.98deg, #7DCE13 5.67%, #EAE209 88.87%);
+}
+
+footer.footer a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Playfair Display;
+    font-size: 32px;
+}
+
+footer.footer p {
+    color: #fff;
+    font-size: 20px;
+    font-family: Caveat;
+    padding-bottom: 8px;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__icon a {
+    display: flex;
+    align-items: center;
+}
+
+.footer__icon img {
+    padding-right: 16px;
+}
+
+@media(max-width: 428px){
+    .container{
+        width: 386px;
+        margin: 0 auto;
+    }
+
+    header.header {
+        width: 900px
+    }
+
+    .header__menu ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .header__logo img{
+        width: 600px;
+    }
+
+    .header__wrapper{
+        flex-direction: column;
+    }
+
+    nav li a {
+        font-size: 40px;
+    }
+
+    .hero{
+        position: relative;
+    }
+
+    .hero__text p{
+        font-size: 32px;
+    }
+
+    .hero__wrapper{
+        position: relative;
+        left: 50%;
+
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__img img{
+        width: 400px;
+    }
+
+    .about-us{
+        position: relative;
+    }
+
+    .about-us__wrapper{
+        flex-direction: column-reverse;
+        position: relative;
+        left: 50%;
+    }
+
+    .about-us__text{
+        text-align: center;
+    }
+
+    .about-us__text p{
+        font-size: 32px;
+    }
+
+    .about-us__img img{
+        width: 318px;
+        padding-top: 84px;
+    }
+    
+    .legal{
+        position: relative;
+        text-align: center;
+    }
+
+    .legal__wrapper{
+        position: relative;
+        left: 50%;
+        flex-direction: column;
+    }
+
+    .register__text{
+        position: relative;
+        left: 60%;
+        text-align: center;
+    }
+
+    .register__text p{
+        font-size: 32px;
+        /* width: 500px; */
+    }
+
+    .p-s p {
+        font-size: 24px;
+        width: 900px;
+    }
+
+    footer.footer{
+        width: 900px
+    }
+}
